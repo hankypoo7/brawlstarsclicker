@@ -1,0 +1,30 @@
+Let's make a game!
+	name:Brawl Stars Clicker
+	by:Henry Wemmie
+	desc:Simple idle game about brawl stars
+	created:21/5/2024
+	updated:21/5/2024
+	version:1.0
+
+Settings
+	background:https://i.ibb.co/8gwgRHb/background.jpg
+	building cost increase:115%
+	building cost refund:50%
+	stylesheet:stuff/bigBlue.css
+
+Layout
+	use default
+
+Buttons
+	*trophyButton
+		name:Get Trophies
+		desc:Click to gain trophies.
+		on click:anim icon wobble
+		on click:yield 1 trophy
+		on click:if (have goldenTouch and chance(1%)) yield 1 goldenTrophy
+		icon:https://i.pinimg.com/originals/b9/38/af/b938affb520dd27c78a161436e44faa5.jpg
+		no text
+		class:bigButton hasFlares
+		icon class:shadowed
+		tooltip origin:bottom
+		tooltip class:red
