@@ -90,7 +90,7 @@ Buildings
 	*colt|colts
 		name:Colt|Colts
 		desc:Hire Colt to get trophies.<//><b>Effect:</b><.>Produces 5 trophies per second.
-		icon:https://liquipedia.net/commons/images/thumb/1/15/Brawl_Colt.png/200px-Brawl_Colt.png
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/colt.png
 		cost:600 trophies
 		on tick:yield 5 trophies
 		req:600 trophies:earned
@@ -98,15 +98,15 @@ Buildings
 	*elPrimo|elPrimos
 		name:elPrimo|elPrimos
 		desc:Hire elPrimo to get trophies.<//><b>Effect:</b><.>Produces 12 trophies per second.
-		icon:https://liquipedia.net/commons/images/thumb/e/e9/Brawl_Primo.png/208px-Brawl_Primo.png
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/primo.png
 		cost:4000 trophies
 		on tick:yield 12 trophies
 		req:4000 trophies:earned
 	
 	*8bit|8bits
 		name:8bit|8bits
-		desc:Hire Colt to get trophies.<//><b>Effect:</b><.>Produces 90 trophies per second.
-		icon:https://liquipedia.net/commons/images/thumb/0/0b/Brawl_8bit.png/216px-Brawl_8bit.png
+		desc:Hire 8bit to get trophies.<//><b>Effect:</b><.>Produces 90 trophies per second.
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/8bit.png
 		cost:20000 trophies
 		on tick:yield 90 trophies
 		req:20000 trophies:earned
@@ -114,7 +114,7 @@ Buildings
 	*frank|franks
 		name:Frank|Franks
 		desc:Hire frank to get trophies<//><b>Effect:</b><.>Produces 300 trophies per second.
-		icon:https://liquipedia.net/commons/images/thumb/9/9d/Brawl_Frank.png/239px-Brawl_Frank.png
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/frank.png
 		cost:200000 trophies, 1 goldenTrophies
 		on tick:yield 300 trophies
 		req:200000 trophies:earned and diamond
@@ -122,7 +122,7 @@ Buildings
 	*gene|genes
 		name:Gene|Genes
 		desc:Hire Gene to get trophies<//><b>Effect:</b><.>Produces 1000 trophies per second.
-		icon:https://liquipedia.net/commons/images/thumb/b/b9/Brawl_Gene.png/210px-Brawl_Gene.png
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/gene.png
 		cost:3000000 trophies, 4 goldenTrophies
 		on tick:yield 1000 trophies
 		req:3000000 trophies:earned and diamond
@@ -130,7 +130,7 @@ Buildings
 	*sandy|sandys
 		name:Sandy|Sandys
 		desc: Hire Sandy to get trophies<//><b>Effect:</b><.>Produces 4000 trophies per second.
-		icon:https://liquipedia.net/commons/images/0/04/Brawl_Sandy.png
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/sandy.png
 		cost:70000000 trophies, 16 goldenTrophies
 		on tick:yield 4000 trophies
 		on tick:if (have ranked) yield 0.01 goldenTrophy
@@ -140,7 +140,7 @@ Buildings
 		name:Cordelius
 		text:Cordelius ([this]%)
 		desc:Summon Cordelius<//><b>Cordelius is [this]% complete.</b>
-		icon:https://liquipedia.net/commons/images/thumb/b/b5/Brawl_Cordelius.png/291px-Brawl_Cordelius.png
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/cordelius.png
 		cost:300000000 trophies, 100 goldenTrophies
 		req:70000000 trophies:earned and diamond
 		limit:100
