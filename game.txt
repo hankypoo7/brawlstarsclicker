@@ -157,6 +157,7 @@ Upgrades
 		cost:100 trophies
 		passive:increase trophy yield of trophyButton by 1
 		req:10 trophies:earned
+		on earn:hide this
 		
 	*power3
 		name:Power level 3
@@ -165,7 +166,8 @@ Upgrades
 		cost:200 trophies
 		passive:increase trophy yield of trophyButton by 1
 		req:50 trophies:earned
-		
+		on earn:hide this
+
 	*power4
 		name:Power level 4
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>+1 trophy/click
@@ -173,6 +175,7 @@ Upgrades
 		cost:400 trophies
 		passive:increase trophy yield of trophyButton by 1
 		req:200 trophies:earned
+		on earn:hide this
 		
 	*power5
 		name:Power level 5
@@ -182,6 +185,7 @@ Upgrades
 		passive:multiply trophy yield of trophyButton by 2
 		passive:multiply yield of trophies by 1.05
 		req:1000 trophies:earned
+		on earn:hide this
 		
 	*power6
 		name:Power level 6
@@ -191,6 +195,7 @@ Upgrades
 		passive:multiply trophy yield of trophyButton by 1.5
 		passive:multiply yield of trophies by 1.05
 		req:1000 trophies:earned
+		on earn:hide this
 		
 	*power7
 		name:Power level 7
@@ -200,6 +205,7 @@ Upgrades
 		passive:multiply trophy yield of trophyButton by 1.5
 		passive:multiply yield of trophies by 1.05
 		req:10000 trophies:earned
+		on earn:hide this
 		
 	*power8
 		name:Power level 8
@@ -209,6 +215,7 @@ Upgrades
 		passive:multiply trophy yield of trophyButton by 1.5
 		passive:multiply yield of trophies by 1.05
 		req:50000 trophies:earned
+		on earn:hide this
 		
 	*power9
 		name:Power level 9
@@ -218,6 +225,7 @@ Upgrades
 		passive:multiply trophy yield of trophyButton by 1.5
 		passive:multiply yield of trophies by 1.05
 		req:100000 trophies:earned
+		on earn:hide this
 		
 	*power10
 		name:Power level 10
@@ -227,6 +235,7 @@ Upgrades
 		passive:multiply trophy yield of trophyButton by 1.5
 		passive:multiply yield of trophies by 1.05
 		req:500000 trophies:earned
+		on earn:hide this
 		
 	*power11
 		name:Power level 11
@@ -236,6 +245,7 @@ Upgrades
 		passive:multiply trophy yield of trophyButton by 2
 		passive:multiply yield of trophies by 1.1
 		req:1000000 trophies:earned
+		on earn:hide this
 	
 	*rareGadget1
 		name:Rare Gadget 1
