@@ -95,16 +95,16 @@ Buildings
 		on tick:yield 5 trophies
 		req:600 trophies:earned
 	
-	*el-primo|el-primos
-		name:el-primo|el-primos
-		desc:Hire el-primo to get trophies.<//><b>Effect:</b><.>Produces 12 trophies per second.
+	*elPrimo|elPrimos
+		name:elPrimo|elPrimos
+		desc:Hire elPrimo to get trophies.<//><b>Effect:</b><.>Produces 12 trophies per second.
 		icon:https://liquipedia.net/commons/images/thumb/e/e9/Brawl_Primo.png/208px-Brawl_Primo.png
 		cost:4000 trophies
 		on tick:yield 12 trophies
 		req:4000 trophies:earned
 	
-	*8-bit|8-bits
-		name:8-bit|8-bits
+	*8bit|8bits
+		name:8bit|8bits
 		desc:Hire Colt to get trophies.<//><b>Effect:</b><.>Produces 90 trophies per second.
 		icon:https://liquipedia.net/commons/images/thumb/0/0b/Brawl_8bit.png/216px-Brawl_8bit.png
 		cost:20000 trophies
@@ -269,21 +269,21 @@ Upgrades
 		
 	*rareGadget3
 		name:Rare Gadget 3
-		desc:Double el-primo and 8-bit production.<//><b>Effect:</b><.>el-primo production x2<.>8-bit production x2
+		desc:Double elPrimo and 8bit production.<//><b>Effect:</b><.>elPrimo production x2<.>8bit production x2
 		icon:https://static.wikia.nocookie.net/brawlstars/images/e/e9/GD-Shelly1.png/revision/latest?cb=20211028044219
 		cost:50000 trophies
-		passive:multiply yield of el-primo by 2
-		passive:multiply yield of 8-bit by 2
-		req:(el-primo>=10 or 8-bit>=10)
+		passive:multiply yield of elPrimo by 2
+		passive:multiply yield of 8bit by 2
+		req:(elPrimo>=10 or 8bit>=10)
 		
 	*rareGadget4
 		name:Rare Gadget 4
-		desc:Double el-primo and 8-bit production again.<//><b>Effect:</b><.>el-primo production x2<.>8-bit production x2
+		desc:Double elPrimo and 8bit production again.<//><b>Effect:</b><.>elPrimo production x2<.>8bit production x2
 		icon:https://static.wikia.nocookie.net/brawlstars/images/e/e9/GD-Shelly1.png/revision/latest?cb=20211028044219
 		cost:5000000 trophies
-		passive:multiply yield of el-primo by 2
-		passive:multiply yield of 8-bit by 2
-		req:(el-primo>=50 or 8-bit>=50)
+		passive:multiply yield of elPrimo by 2
+		passive:multiply yield of 8bit by 2
+		req:(elPrimo>=50 or 8bit>=50)
 		
 	*rareGadget5
 		name:Rare Gadget 5
