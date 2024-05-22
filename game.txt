@@ -40,7 +40,7 @@ Resources
 	*goldenTrophy|goldenTrophies
 		name:Golden trophy|Golden trophies
 		desc:These shiny trophies are extremely rare, extremely precious and extremely valuable!
-		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3s0cW0MRdCyHl1ZoU-26_4tWakwVdidQbOfwtDffeeq0TiWcQme5huk5ShcoVPzOiGQ&usqp=CAU
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/goldtrophy.png
 		class:noBackground
 		hidden when 0
 
