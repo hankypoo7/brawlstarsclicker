@@ -256,6 +256,7 @@ Upgrades
 		passive:multiply yield of brock by 2
 		passive:multiply yield of colt by 2
 		req:(shelly>=10 or brock>=10 or colt>=10)
+		on earn:hide this
 		
 	*rareGadget2
 		name:Rare Gadget 2
@@ -266,7 +267,8 @@ Upgrades
 		passive:multiply yield of brock by 2
 		passive:multiply yield of colt by 2
 		req:(shelly>=50 or brock>=50 or colt>=50)
-		
+		on earn:hide this
+
 	*starPower
 		name:Star Power
 		desc:Your rare brawlers once again double production<//><b>Effect:</b><.>shelly production x2<.>brock production x2<.>colt production x2
@@ -276,7 +278,8 @@ Upgrades
 		passive:multiply yield of brock by 2
 		passive:multiply yield of colt by 2
 		req:(shelly>=100 or brock>=100 or colt>=100)
-		
+		on earn:hide this
+
 	*rareGadget3
 		name:Rare Gadget 3
 		desc:Double elPrimo and 8bit production.<//><b>Effect:</b><.>elPrimo production x2<.>8bit production x2
@@ -285,7 +288,8 @@ Upgrades
 		passive:multiply yield of elPrimo by 2
 		passive:multiply yield of 8bit by 2
 		req:(elPrimo>=10 or 8bit>=10)
-		
+		on earn:hide this
+
 	*rareGadget4
 		name:Rare Gadget 4
 		desc:Double elPrimo and 8bit production again.<//><b>Effect:</b><.>elPrimo production x2<.>8bit production x2
@@ -294,7 +298,8 @@ Upgrades
 		passive:multiply yield of elPrimo by 2
 		passive:multiply yield of 8bit by 2
 		req:(elPrimo>=50 or 8bit>=50)
-		
+		on earn:hide this
+
 	*rareGadget5
 		name:Rare Gadget 5
 		desc:Double Frank and Gene production.<//><b>Effect:</b><.>frank production x2<.>gene production x2
@@ -303,7 +308,8 @@ Upgrades
 		passive:multiply yield of frank by 2
 		passive:multiply yield of gene by 2
 		req:(frank>=10 or gene>=10)
-		
+		on earn:hide this
+
 	*rareGadget6
 		name:Rare Gadget 6
 		desc:Double Frank and Gene production again.<//><b>Effect:</b><.>frank production x2<.>gene production x2
@@ -312,7 +318,8 @@ Upgrades
 		passive:multiply yield of frank by 2
 		passive:multiply yield of gene by 2
 		req:(frank>=50 or gene>=50)
-		
+		on earn:hide this
+
 	*cordeliusHyper
 		name:Cordelius HyperCharge
 		desc:Double Cordelius production.<//><b>Effect:</b><.>cordelius production x2
@@ -320,14 +327,16 @@ Upgrades
 		cost:1000000000 trophies
 		passive:multiply yield of cordelius by 2
 		req:10 cordelius
-	
+		on earn:hide this
+
 	*goldenTouch
 		name:Golden touch
 		desc:Possibility for Golden Trophy.<//><b>Effect:</b><.>1% chance of gaining 1 golden trophy per click
 		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3s0cW0MRdCyHl1ZoU-26_4tWakwVdidQbOfwtDffeeq0TiWcQme5huk5ShcoVPzOiGQ&usqp=CAU
 		cost:1 goldenTrophy
 		req:1 goldenTrophy:earned
-		
+		on earn:hide this
+
 	*goldenLuck
 		name:Golden luck
 		desc:Better possibility to get a Lucky Trophy<//><b>Effect:</b><.>Lucky trophies appear 30% more often
@@ -335,13 +344,15 @@ Upgrades
 		passive:multiply frequency of luckyTrophy by 0.7
 		cost:5 goldenTrophies
 		req:1 goldenTrophy:earned
-	
+		on earn:hide this
+
 	*diamond
 		name:Diamond tier
 		desc:Your brawlers will reach diamond tier<//><b>Effect:</b><.>unlocks new brawlers
 		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKsEvcV-My_ckCeOjo_aG9PARMoN19qeffw&usqp=CAU
 		cost:10 goldenTrophies
 		req:5 goldenTrophies:earned
+		on earn:hide this
 		
 	*veryLuckyUpgrades
 		name:Very lucky upgrades
@@ -349,14 +360,16 @@ Upgrades
 		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCRr_g3pMskDtLPLDL4JaXAj1csz4YON_fPQ&usqp=CAU
 		cost:100 goldenTrophies
 		req:50 goldenTrophies:earned
-		
+		on earn:hide this
+
 	*ranked
 		name:Ranked
 		desc:Unlocked ranked play.<//><b>Effect:</b><.>ranked now produces 1 golden trophy every 100 seconds
 		icon:https://support.supercell.com/images/Ranked-Starr-Drops.png?v=1708597165
 		cost:100 goldenTrophies
 		req:50 goldenTrophies:earned
-		
+		on earn:hide this
+
 Achievements
 	*TEMPLATE
 		on click:anim glow
