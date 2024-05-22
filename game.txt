@@ -33,7 +33,7 @@ Resources
 	*trophy|trophies
 		name:Trophy|Trophies
 		desc:These are your trophies. Your goal is to get the most trophies possible.
-		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/trophytransparent.png
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/trophytransparentmini.png
 		class:noBackground
 		show earned
 		
