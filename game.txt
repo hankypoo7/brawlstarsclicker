@@ -28,3 +28,398 @@ Buttons
 		icon class:shadowed
 		tooltip origin:bottom
 		tooltip class:red
+
+Resources
+	*trophy|trophies
+		name:Trophy|Trophies
+		desc:These are your trophies. Your goal is to get the most trophies possible.
+		icon:https://i.pinimg.com/originals/b9/38/af/b938affb520dd27c78a161436e44faa5.jpg
+		class:noBackground
+		show earned
+		
+	*goldenTrophy|goldenTrophies
+		name:Golden trophy|Golden trophies
+		desc:These shiny trophies are extremely rare, extremely precious and extremely valuable!
+		icon:https://i.ibb.co/sKfJ5cX/trophyshiny.jpg
+		class:noBackground
+		hidden when 0
+
+Shinies
+	*luckyTrophy
+		on click:log Woop
+		movement:onRight moveLeft fade bounce:0.05
+		frequency:60
+		frequency variation:30
+		icon:https://i.ibb.co/JttsK2H/download-31.jpg
+		class:bigButton
+		on click:
+			$boost=1
+			if (have clover) $boost=4
+			if (chance(25%))
+				//get at least 7, or between 1 and 3 minutes of our trophy production
+				$amount=max(7,random(trophies:ps*60*1,trophies:ps*60*3))*$boost
+				toast The lucky trophy grants you<//><b>[$amount] trophies</b>.
+				yield $amount trophies
+			else
+				$amount=1*$boost
+				toast The lucky trophy grants you<//><b>[$amount] golden trophies[s?$amount]</b>!
+				yield $amount goldenTrophy
+			end
+		end
+
+Buildings
+	*TEMPLATE
+		on click:anim glow
+		
+	*shelly|shellys
+		name:Shelly|Shelly
+		desc:Hire Shelly to get trophies.<//><b>Effect:</b><.>Produces 1 trophy every 10 seconds.
+		icon:https://liquipedia.net/commons/images/f/f6/Brawl_Shelly.png
+		cost:15 trophies
+		on tick:yield 0.1 trophy
+		unlocked
+	
+	*brock|brocks
+		name:Brock|Brocks
+		desc:Hire Brock to get trophies.<//><b>Effect:</b><.>Produces 1 trophy every 2 seconds.
+		icon:https://liquipedia.net/commons/images/0/0e/Brawl_Brock.png
+		cost:100 trophies
+		on tick:yield 0.5 trophies
+		req:100 trophies:earned
+	
+	*colt|colts
+		name:Colt|Colts
+		desc:Hire Colt to get trophies.<//><b>Effect:</b><.>Produces 5 trophies per second.
+		icon:https://liquipedia.net/commons/images/thumb/1/15/Brawl_Colt.png/200px-Brawl_Colt.png
+		cost:600 trophies
+		on tick:yield 5 trophies
+		req:600 trophies:earned
+	
+	*el-primo|el-primos
+		name:el-primo|el-primos
+		desc:Hire el-primo to get trophies.<//><b>Effect:</b><.>Produces 12 trophies per second.
+		icon:https://liquipedia.net/commons/images/thumb/e/e9/Brawl_Primo.png/208px-Brawl_Primo.png
+		cost:4000 trophies
+		on tick:yield 12 trophies
+		req:4000 trophies:earned
+	
+	*8-bit|8-bits
+		name:8-bit|8-bits
+		desc:Hire Colt to get trophies.<//><b>Effect:</b><.>Produces 90 trophies per second.
+		icon:https://liquipedia.net/commons/images/thumb/0/0b/Brawl_8bit.png/216px-Brawl_8bit.png
+		cost:20000 trophies
+		on tick:yield 90 trophies
+		req:20000 trophies:earned
+	
+	*frank|franks
+		name:Frank|Franks
+		desc:Hire frank to get trophies<//><b>Effect:</b><.>Produces 300 trophies per second.
+		icon:https://liquipedia.net/commons/images/thumb/9/9d/Brawl_Frank.png/239px-Brawl_Frank.png
+		cost:200000 trophies, 1 goldenTrophies
+		on tick:yield 300 trophies
+		req:200000 trophies:earned and diamond
+		
+	*gene|genes
+		name:Gene|Genes
+		desc:Hire Gene to get trophies<//><b>Effect:</b><.>Produces 1000 trophies per second.
+		icon:https://liquipedia.net/commons/images/thumb/b/b9/Brawl_Gene.png/210px-Brawl_Gene.png
+		cost:3000000 trophies, 4 goldenTrophies
+		on tick:yield 1000 trophies
+		req:3000000 trophies:earned and diamond
+		
+	*sandy|sandys
+		name:Sandy|Sandys
+		desc: Hire Sandy to get trophies<//><b>Effect:</b><.>Produces 4000 trophies per second.
+		icon:https://liquipedia.net/commons/images/0/04/Brawl_Sandy.png
+		cost:70000000 trophies, 16 goldenTrophies
+		on tick:yield 4000 trophies
+		on tick:if (have ranked) yield 0.01 goldenTrophy
+		req:70000000 trophies:earned and diamond
+		
+	*cordelius
+		name:Cordelius
+		text:Cordelius ([this]%)
+		desc:Summon Cordelius<//><b>Cordelius is [this]% complete.</b>
+		icon:https://liquipedia.net/commons/images/thumb/b/b5/Brawl_Cordelius.png/291px-Brawl_Cordelius.png
+		cost:300000000 trophies, 100 goldenTrophies
+		req:70000000 trophies:earned and diamond
+		limit:100
+		cost increase:105%
+
+Upgrades
+	*TEMPLATE
+		on click:anim glow
+	
+	*power2
+		name:Power level 2
+		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>+1 trophy/click
+		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		cost:100 trophies
+		passive:increase trophy yield of trophyButton by 1
+		req:10 trophies:earned
+		
+	*power3
+		name:Spinach
+		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>+1 trophy/click
+		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		cost:200 trophies
+		passive:increase trophy yield of trophyButton by 1
+		req:50 trophies:earned
+		
+	*power4
+		name:Lettuce
+		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>+1 trophy/click
+		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		cost:400 trophies
+		passive:increase trophy yield of trophyButton by 1
+		req:200 trophies:earned
+		
+	*power5
+		name:Broccoli
+		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x2<.>trophy production +5%
+		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		cost:3000 trophies
+		passive:multiply trophy yield of trophyButton by 2
+		passive:multiply yield of trophies by 1.05
+		req:1000 trophies:earned
+		
+	*power6
+		name:Apple
+		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
+		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		cost:10000 trophies
+		passive:multiply trophy yield of trophyButton by 1.5
+		passive:multiply yield of trophies by 1.05
+		req:1000 trophies:earned
+		
+	*power7
+		name:Radish
+		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
+		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		cost:50000 trophies
+		passive:multiply trophy yield of trophyButton by 1.5
+		passive:multiply yield of trophies by 1.05
+		req:10000 trophies:earned
+		
+	*power8
+		name:Mint
+		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
+		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		cost:100000 trophies
+		passive:multiply trophy yield of trophyButton by 1.5
+		passive:multiply yield of trophies by 1.05
+		req:50000 trophies:earned
+		
+	*power9
+		name:Chard
+		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
+		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		cost:500000 trophies
+		passive:multiply trophy yield of trophyButton by 1.5
+		passive:multiply yield of trophies by 1.05
+		req:100000 trophies:earned
+		
+	*power10
+		name:Cherry
+		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
+		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		cost:1000000 trophies
+		passive:multiply trophy yield of trophyButton by 1.5
+		passive:multiply yield of trophies by 1.05
+		req:500000 trophies:earned
+		
+	*power11
+		name:Carrot
+		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x2<.>trophy production +10%
+		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		cost:100000000 trophies
+		passive:multiply trophy yield of trophyButton by 2
+		passive:multiply yield of trophies by 1.1
+		req:1000000 trophies:earned
+	
+	*buildingUpgrade1
+		name:Sippy bottles
+		desc:Your trophies can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
+		icon:icons[2,0] icons[3,0]
+		cost:1000 trophies
+		passive:multiply yield of cage by 2
+		passive:multiply yield of hutch by 2
+		passive:multiply yield of coop by 2
+		req:(cages>=10 or hutches>=10 or coops>=10)
+		
+	*buildingUpgrade2
+		name:Prime grade hay
+		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
+		icon:icons[2,0] icons[3,1]
+		cost:100000 trophies
+		passive:multiply yield of cage by 2
+		passive:multiply yield of hutch by 2
+		passive:multiply yield of coop by 2
+		req:(cages>=50 or hutches>=50 or coops>=50)
+		
+	*buildingUpgrade3
+		name:Shredded newspapers
+		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
+		icon:icons[2,0] icons[3,2]
+		cost:5000000 trophies
+		passive:multiply yield of cage by 2
+		passive:multiply yield of hutch by 2
+		passive:multiply yield of coop by 2
+		req:(cages>=100 or hutches>=100 or coops>=100)
+		
+	*buildingUpgrade4
+		name:Pretty fences
+		desc:Just the right size so your trophies can peek through but not hop over!<//><b>Effect:</b><.>rabbit pen production x2<.>rabbit meadow production x2
+		icon:icons[2,0] icons[3,3]
+		cost:50000 trophies
+		passive:multiply yield of pen by 2
+		passive:multiply yield of meadow by 2
+		req:(pens>=10 or meadows>=10)
+		
+	*buildingUpgrade5
+		name:trophy playground
+		desc:If your trophies are outside, they might as well get some exercise!<//><b>Effect:</b><.>rabbit pen production x2<.>rabbit meadow production x2
+		icon:icons[2,0] icons[3,4]
+		cost:5000000 trophies
+		passive:multiply yield of pen by 2
+		passive:multiply yield of meadow by 2
+		req:(pens>=50 or meadows>=50)
+		
+	*buildingUpgrade6
+		name:trophy TVs
+		desc:Televisions that broadcast trophy cartoons, trophy sitcoms, and trophy news bulletins.<//><b>Effect:</b><.>rabbit village production x2<.>rabbit city production x2
+		icon:icons[2,0] icons[3,5]
+		cost:1000000 trophies
+		passive:multiply yield of village by 2
+		passive:multiply yield of city by 2
+		req:(villages>=10 or cities>=10)
+		
+	*buildingUpgrade7
+		name:Wee little trophy cars
+		desc:Your trophies drive around in these. How nice!<//><b>Effect:</b><.>rabbit village production x2<.>rabbit city production x2
+		icon:icons[2,0] icons[3,6]
+		cost:500000000 trophies
+		passive:multiply yield of village by 2
+		passive:multiply yield of city by 2
+		req:(villages>=50 or cities>=50)
+		
+	*buildingUpgrade8
+		name:Soothing moon crystals
+		desc:Just really nice to be around.<//><b>Effect:</b><.>moon citadel production x2
+		icon:icons[2,0] icons[3,7]
+		cost:1000000000 trophies
+		passive:multiply yield of citadel by 2
+		req:10 citadels
+		
+	//golden carrot upgrades
+	
+	*goldenTouch
+		name:Golden touch
+		desc:The delicate art of finding vegetables made of precious metals.<//><b>Effect:</b><.>1% chance of gaining 1 golden carrot per trophy click
+		icon:icons[2,5]
+		cost:1 goldenCarrot
+		req:1 goldenCarrot:earned
+		
+	*rabbitHaste
+		name:Rabbit's haste
+		desc:I'm late! I'm late! For a very important date!<//><b>Effect:</b><.>lucky trophies appear 30% more often
+		icon:icons[2,6]
+		passive:multiply frequency of luckytrophy by 0.7
+		cost:5 goldenCarrots
+		req:1 goldenCarrot:earned
+	
+	*independenceDay
+		name:Independence day
+		desc:Your trophies are making their first step towards declaring their independence from the oppressive shackles of pens and cages.<//><b>Effect:</b><.>unlocks new buildings
+		icon:icons[2,7]
+		cost:10 goldenCarrots
+		req:5 goldenCarrots:earned
+		
+	*clover
+		name:Clover
+		desc:A delicious herb that tastes lucky.<//><b>Effect:</b><.>lucky trophy effects are 4 times more powerful
+		icon:icons[2,8]
+		cost:100 goldenCarrots
+		req:50 goldenCarrots:earned
+		
+	*moonGardens
+		name:Moon gardens
+		desc:The royal botanists in your moon citadels have found new ways of cultivating plants in reduced gravity!<//><b>Effect:</b><.>moon citadels now produce 1 golden carrot every 100 seconds
+		icon:icons[2,9]
+		cost:100 goldenCarrots
+		req:50 goldenCarrots:earned
+		
+Achievements
+	*TEMPLATE
+		on click:anim glow
+		
+	*trophyAchiev1
+		name:Run rabbit run
+		desc:Have <b>1</b> trophy.
+		req:1 trophy
+		icon:icons[2,4] icons[0,2] icons[0,6]
+	*trophyAchiev2
+		name:trophiest home videos
+		desc:Have <b>1000</b> trophies.
+		req:1000 trophies
+		icon:icons[2,4] icons[0,3] icons[0,6]
+	*trophyAchiev3
+		name:You got buns, hun
+		desc:Have <b>1000000</b> trophies.
+		req:10000000 trophies
+		icon:icons[2,4] icons[0,4] icons[0,6]
+		
+	*clickAchiev1
+		name:That tickles
+		desc:Click the trophy <b>10</b> times.
+		req:10 trophyButton clicks
+		icon:icons[2,2] icons[0,2] icons[0,6]
+	*clickAchiev2
+		name:Don't squeeze me I'll fart
+		desc:Click the trophy <b>100</b> times.
+		req:100 trophyButton clicks
+		icon:icons[2,2] icons[0,3] icons[0,6]
+	*clickAchiev3
+		name:You're cruising for a bruising, dude
+		desc:Click the trophy <b>2000</b> times.
+		req:2000 trophyButton clicks
+		icon:icons[2,2] icons[0,4] icons[0,6]
+		
+	*trophyPsAchiev1
+		name:Be vewy vewy quiet
+		desc:Produce <b>10</b> trophies per second.
+		req:10 trophies per second
+		icon:icons[2,3] icons[0,2] icons[0,6]
+	*trophyPsAchiev2
+		name:Hop and a skip
+		desc:Produce <b>1000</b> trophies per second.
+		req:1000 trophies per second
+		icon:icons[2,3] icons[0,3] icons[0,6]
+	*trophyPsAchiev3
+		name:Go forth and multiply
+		desc:Produce <b>100000</b> trophies per second.
+		req:100000 trophies per second
+		icon:icons[2,3] icons[0,4] icons[0,6]
+		
+	*carrotAchiev1
+		name:Isn't it neat
+		desc:Have <b>1</b> golden carrot.
+		req:1 goldenCarrot
+		icon:icons[0,1] icons[0,2]
+	*carrotAchiev2
+		name:All that glitters
+		desc:Have <b>100</b> golden carrots.
+		req:100 goldenCarrot
+		icon:icons[0,1] icons[0,3]
+	*carrotAchiev3
+		name:Zero nutritional value
+		desc:Have <b>1000</b> golden carrots.
+		req:1000 goldenCarrot
+		icon:icons[0,1] icons[0,4]
+	
+	*fortressAchiev
+		name:Freedom!
+		desc:Complete building the <b>freedom fortress</b>.<//>This is it. You beat the game!
+		req:100 fortress
+		icon:icons[3,8] icons[0,4]
+		
