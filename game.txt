@@ -153,7 +153,7 @@ Upgrades
 	*power2
 		name:Power level 2
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>+1 trophy/click
-		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/pwrp.png
 		cost:100 trophies
 		passive:increase trophy yield of trophyButton by 1
 		req:10 trophies:earned
@@ -161,7 +161,7 @@ Upgrades
 	*power3
 		name:Power level 3
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>+1 trophy/click
-		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/pwrp.png
 		cost:200 trophies
 		passive:increase trophy yield of trophyButton by 1
 		req:50 trophies:earned
@@ -169,7 +169,7 @@ Upgrades
 	*power4
 		name:Power level 4
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>+1 trophy/click
-		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/pwrp.png
 		cost:400 trophies
 		passive:increase trophy yield of trophyButton by 1
 		req:200 trophies:earned
@@ -177,7 +177,7 @@ Upgrades
 	*power5
 		name:Power level 5
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x2<.>trophy production +5%
-		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/pwrp.png
 		cost:3000 trophies
 		passive:multiply trophy yield of trophyButton by 2
 		passive:multiply yield of trophies by 1.05
@@ -186,7 +186,7 @@ Upgrades
 	*power6
 		name:Power level 6
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
-		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/pwrp.png
 		cost:10000 trophies
 		passive:multiply trophy yield of trophyButton by 1.5
 		passive:multiply yield of trophies by 1.05
@@ -195,7 +195,7 @@ Upgrades
 	*power7
 		name:Power level 7
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
-		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/pwrp.png
 		cost:50000 trophies
 		passive:multiply trophy yield of trophyButton by 1.5
 		passive:multiply yield of trophies by 1.05
@@ -204,7 +204,7 @@ Upgrades
 	*power8
 		name:Power level 8
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
-		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/pwrp.png
 		cost:100000 trophies
 		passive:multiply trophy yield of trophyButton by 1.5
 		passive:multiply yield of trophies by 1.05
@@ -213,7 +213,7 @@ Upgrades
 	*power9
 		name:Power level 9
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
-		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/pwrp.png
 		cost:500000 trophies
 		passive:multiply trophy yield of trophyButton by 1.5
 		passive:multiply yield of trophies by 1.05
@@ -222,7 +222,7 @@ Upgrades
 	*power10
 		name:Power level 10
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
-		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/pwrp.png
 		cost:1000000 trophies
 		passive:multiply trophy yield of trophyButton by 1.5
 		passive:multiply yield of trophies by 1.05
@@ -231,7 +231,7 @@ Upgrades
 	*power11
 		name:Power level 11
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x2<.>trophy production +10%
-		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/pwrp.png
 		cost:100000000 trophies
 		passive:multiply trophy yield of trophyButton by 2
 		passive:multiply yield of trophies by 1.1
