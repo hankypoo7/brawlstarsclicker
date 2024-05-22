@@ -159,7 +159,7 @@ Upgrades
 		req:10 trophies:earned
 		
 	*power3
-		name:Spinach
+		name:Power level 3
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>+1 trophy/click
 		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
 		cost:200 trophies
@@ -167,7 +167,7 @@ Upgrades
 		req:50 trophies:earned
 		
 	*power4
-		name:Lettuce
+		name:Power level 4
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>+1 trophy/click
 		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
 		cost:400 trophies
@@ -175,7 +175,7 @@ Upgrades
 		req:200 trophies:earned
 		
 	*power5
-		name:Broccoli
+		name:Power level 5
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x2<.>trophy production +5%
 		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
 		cost:3000 trophies
@@ -184,7 +184,7 @@ Upgrades
 		req:1000 trophies:earned
 		
 	*power6
-		name:Apple
+		name:Power level 6
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
 		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
 		cost:10000 trophies
@@ -193,7 +193,7 @@ Upgrades
 		req:1000 trophies:earned
 		
 	*power7
-		name:Radish
+		name:Power level 7
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
 		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
 		cost:50000 trophies
@@ -202,7 +202,7 @@ Upgrades
 		req:10000 trophies:earned
 		
 	*power8
-		name:Mint
+		name:Power level 8
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
 		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
 		cost:100000 trophies
@@ -211,7 +211,7 @@ Upgrades
 		req:50000 trophies:earned
 		
 	*power9
-		name:Chard
+		name:Power level 9
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
 		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
 		cost:500000 trophies
@@ -220,7 +220,7 @@ Upgrades
 		req:100000 trophies:earned
 		
 	*power10
-		name:Cherry
+		name:Power level 10
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x1.5<.>trophy production +5%
 		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
 		cost:1000000 trophies
@@ -229,7 +229,7 @@ Upgrades
 		req:500000 trophies:earned
 		
 	*power11
-		name:Carrot
+		name:Power level 11
 		desc:Upgrade your brawlers power level.<//><b>Effect:</b><.>trophies/click x2<.>trophy production +10%
 		icon:https://wallpapers.com/images/hd/brawl-stars-purple-star-power-icon-8q18s9mtr3l44ur6.jpg
 		cost:100000000 trophies
@@ -237,189 +237,186 @@ Upgrades
 		passive:multiply yield of trophies by 1.1
 		req:1000000 trophies:earned
 	
-	*buildingUpgrade1
-		name:Sippy bottles
-		desc:Your trophies can drink their fill!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
-		icon:icons[2,0] icons[3,0]
+	*rareGadget1
+		name:Rare Gadget 1
+		desc:Your rare brawlers double production.<//><b>Effect:</b><.>shelly production x2<.>brock production x2<.>colt production x2
+		icon:https://static.wikia.nocookie.net/brawlstars/images/e/e9/GD-Shelly1.png/revision/latest?cb=20211028044219
 		cost:1000 trophies
-		passive:multiply yield of cage by 2
-		passive:multiply yield of hutch by 2
-		passive:multiply yield of coop by 2
-		req:(cages>=10 or hutches>=10 or coops>=10)
+		passive:multiply yield of shelly by 2
+		passive:multiply yield of brock by 2
+		passive:multiply yield of colt by 2
+		req:(shelly>=10 or brock>=10 or colt>=10)
 		
-	*buildingUpgrade2
-		name:Prime grade hay
-		desc:Not just for horses anymore!<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
-		icon:icons[2,0] icons[3,1]
+	*rareGadget2
+		name:Rare Gadget 2
+		desc:Your rare brawlers double production.<//><b>Effect:</b><.>shelly production x2<.>brock production x2<.>colt production x2
+		icon:https://static.wikia.nocookie.net/brawlstars/images/e/e9/GD-Shelly1.png/revision/latest?cb=20211028044219
 		cost:100000 trophies
-		passive:multiply yield of cage by 2
-		passive:multiply yield of hutch by 2
-		passive:multiply yield of coop by 2
-		req:(cages>=50 or hutches>=50 or coops>=50)
+		passive:multiply yield of shelly by 2
+		passive:multiply yield of brock by 2
+		passive:multiply yield of colt by 2
+		req:(shelly>=50 or brock>=50 or colt>=50)
 		
-	*buildingUpgrade3
-		name:Shredded newspapers
-		desc:You'd think they just poop on these, but they really enjoy reading the Sunday comics.<//><b>Effect:</b><.>rabbit cage production x2<.>rabbit hutch production x2<.>rabbit coop production x2
-		icon:icons[2,0] icons[3,2]
+	*starPower
+		name:Star Power
+		desc:Your rare brawlers once again double production<//><b>Effect:</b><.>shelly production x2<.>brock production x2<.>colt production x2
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn75DhjMEOqOKJUCkvoBWwWgpr9WbYOCx-6G8h6zREPbcmTRiacrwf0ISysA&s
 		cost:5000000 trophies
-		passive:multiply yield of cage by 2
-		passive:multiply yield of hutch by 2
-		passive:multiply yield of coop by 2
-		req:(cages>=100 or hutches>=100 or coops>=100)
+		passive:multiply yield of shelly by 2
+		passive:multiply yield of brock by 2
+		passive:multiply yield of colt by 2
+		req:(shelly>=100 or brock>=100 or colt>=100)
 		
-	*buildingUpgrade4
-		name:Pretty fences
-		desc:Just the right size so your trophies can peek through but not hop over!<//><b>Effect:</b><.>rabbit pen production x2<.>rabbit meadow production x2
-		icon:icons[2,0] icons[3,3]
+	*rareGadget3
+		name:Rare Gadget 3
+		desc:Double el-primo and 8-bit production.<//><b>Effect:</b><.>el-primo production x2<.>8-bit production x2
+		icon:https://static.wikia.nocookie.net/brawlstars/images/e/e9/GD-Shelly1.png/revision/latest?cb=20211028044219
 		cost:50000 trophies
-		passive:multiply yield of pen by 2
-		passive:multiply yield of meadow by 2
-		req:(pens>=10 or meadows>=10)
+		passive:multiply yield of el-primo by 2
+		passive:multiply yield of 8-bit by 2
+		req:(el-primo>=10 or 8-bit>=10)
 		
-	*buildingUpgrade5
-		name:trophy playground
-		desc:If your trophies are outside, they might as well get some exercise!<//><b>Effect:</b><.>rabbit pen production x2<.>rabbit meadow production x2
-		icon:icons[2,0] icons[3,4]
+	*rareGadget4
+		name:Rare Gadget 4
+		desc:Double el-primo and 8-bit production again.<//><b>Effect:</b><.>el-primo production x2<.>8-bit production x2
+		icon:https://static.wikia.nocookie.net/brawlstars/images/e/e9/GD-Shelly1.png/revision/latest?cb=20211028044219
 		cost:5000000 trophies
-		passive:multiply yield of pen by 2
-		passive:multiply yield of meadow by 2
-		req:(pens>=50 or meadows>=50)
+		passive:multiply yield of el-primo by 2
+		passive:multiply yield of 8-bit by 2
+		req:(el-primo>=50 or 8-bit>=50)
 		
-	*buildingUpgrade6
-		name:trophy TVs
-		desc:Televisions that broadcast trophy cartoons, trophy sitcoms, and trophy news bulletins.<//><b>Effect:</b><.>rabbit village production x2<.>rabbit city production x2
-		icon:icons[2,0] icons[3,5]
+	*rareGadget5
+		name:Rare Gadget 5
+		desc:Double Frank and Gene production.<//><b>Effect:</b><.>frank production x2<.>gene production x2
+		icon:https://static.wikia.nocookie.net/brawlstars/images/e/e9/GD-Shelly1.png/revision/latest?cb=20211028044219
 		cost:1000000 trophies
-		passive:multiply yield of village by 2
-		passive:multiply yield of city by 2
-		req:(villages>=10 or cities>=10)
+		passive:multiply yield of frank by 2
+		passive:multiply yield of gene by 2
+		req:(frank>=10 or gene>=10)
 		
-	*buildingUpgrade7
-		name:Wee little trophy cars
-		desc:Your trophies drive around in these. How nice!<//><b>Effect:</b><.>rabbit village production x2<.>rabbit city production x2
-		icon:icons[2,0] icons[3,6]
+	*rareGadget6
+		name:Rare Gadget 6
+		desc:Double Frank and Gene production again.<//><b>Effect:</b><.>frank production x2<.>gene production x2
+		icon:https://static.wikia.nocookie.net/brawlstars/images/e/e9/GD-Shelly1.png/revision/latest?cb=20211028044219
 		cost:500000000 trophies
-		passive:multiply yield of village by 2
-		passive:multiply yield of city by 2
-		req:(villages>=50 or cities>=50)
+		passive:multiply yield of frank by 2
+		passive:multiply yield of gene by 2
+		req:(frank>=50 or gene>=50)
 		
-	*buildingUpgrade8
-		name:Soothing moon crystals
-		desc:Just really nice to be around.<//><b>Effect:</b><.>moon citadel production x2
-		icon:icons[2,0] icons[3,7]
+	*cordeliusHyper
+		name:Cordelius HyperCharge
+		desc:Double Cordelius production.<//><b>Effect:</b><.>cordelius production x2
+		icon:https://i.ibb.co/njCyvPp/j6mw5k5399nb1.jpg
 		cost:1000000000 trophies
-		passive:multiply yield of citadel by 2
-		req:10 citadels
-		
-	//golden carrot upgrades
+		passive:multiply yield of cordelius by 2
+		req:10 cordelius
 	
 	*goldenTouch
 		name:Golden touch
-		desc:The delicate art of finding vegetables made of precious metals.<//><b>Effect:</b><.>1% chance of gaining 1 golden carrot per trophy click
-		icon:icons[2,5]
-		cost:1 goldenCarrot
-		req:1 goldenCarrot:earned
+		desc:Possibility for Golden Trophy.<//><b>Effect:</b><.>1% chance of gaining 1 golden trophy per click
+		icon:https://i.ibb.co/sKfJ5cX/trophyshiny.jpg
+		cost:1 goldenTrophy
+		req:1 goldenTrophy:earned
 		
-	*rabbitHaste
-		name:Rabbit's haste
-		desc:I'm late! I'm late! For a very important date!<//><b>Effect:</b><.>lucky trophies appear 30% more often
-		icon:icons[2,6]
-		passive:multiply frequency of luckytrophy by 0.7
-		cost:5 goldenCarrots
-		req:1 goldenCarrot:earned
+	*goldenLuck
+		name:Golden luck
+		desc:Better possibility to get a Lucky Trophy<//><b>Effect:</b><.>Lucky trophies appear 30% more often
+		icon:https://i.ibb.co/JttsK2H/download-31.jpg
+		passive:multiply frequency of luckyTrophy by 0.7
+		cost:5 goldenTrophies
+		req:1 goldenTrophy:earned
 	
-	*independenceDay
-		name:Independence day
-		desc:Your trophies are making their first step towards declaring their independence from the oppressive shackles of pens and cages.<//><b>Effect:</b><.>unlocks new buildings
-		icon:icons[2,7]
-		cost:10 goldenCarrots
-		req:5 goldenCarrots:earned
+	*diamond
+		name:Diamond tier
+		desc:Your brawlers will reach diamond tier<//><b>Effect:</b><.>unlocks new brawlers
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKsEvcV-My_ckCeOjo_aG9PARMoN19qeffw&usqp=CAU
+		cost:10 goldenTrophies
+		req:5 goldenTrophies:earned
 		
-	*clover
-		name:Clover
-		desc:A delicious herb that tastes lucky.<//><b>Effect:</b><.>lucky trophy effects are 4 times more powerful
-		icon:icons[2,8]
-		cost:100 goldenCarrots
-		req:50 goldenCarrots:earned
+	*veryLuckyUpgrades
+		name:Very lucky upgrades
+		desc:You have had a very groovy run.<//><b>Effect:</b><.>lucky trophy effects are 4 times more powerful
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCRr_g3pMskDtLPLDL4JaXAj1csz4YON_fPQ&usqp=CAU
+		cost:100 goldenTrophies
+		req:50 goldenTrophies:earned
 		
-	*moonGardens
-		name:Moon gardens
-		desc:The royal botanists in your moon citadels have found new ways of cultivating plants in reduced gravity!<//><b>Effect:</b><.>moon citadels now produce 1 golden carrot every 100 seconds
-		icon:icons[2,9]
-		cost:100 goldenCarrots
-		req:50 goldenCarrots:earned
+	*ranked
+		name:Ranked
+		desc:Unlocked ranked play.<//><b>Effect:</b><.>ranked now produces 1 golden trophy every 100 seconds
+		icon:https://support.supercell.com/images/Ranked-Starr-Drops.png?v=1708597165
+		cost:100 goldenTrophies
+		req:50 goldenTrophies:earned
 		
 Achievements
 	*TEMPLATE
 		on click:anim glow
 		
 	*trophyAchiev1
-		name:Run rabbit run
+		name:Welcome
 		desc:Have <b>1</b> trophy.
 		req:1 trophy
-		icon:icons[2,4] icons[0,2] icons[0,6]
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX4sdJhSCybIRkL-p-NB2uqFA0g0F2IceJ-g&usqp=CAU
 	*trophyAchiev2
-		name:trophiest home videos
+		name:The beginning
 		desc:Have <b>1000</b> trophies.
 		req:1000 trophies
-		icon:icons[2,4] icons[0,3] icons[0,6]
+		icon:https://i.ibb.co/dPcRMGC/download-32.jpg
 	*trophyAchiev3
-		name:You got buns, hun
+		name:Sweaty kid
 		desc:Have <b>1000000</b> trophies.
 		req:10000000 trophies
-		icon:icons[2,4] icons[0,4] icons[0,6]
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKsEvcV-My_ckCeOjo_aG9PARMoN19qeffw&usqp=CAU
 		
 	*clickAchiev1
-		name:That tickles
+		name:EZ
 		desc:Click the trophy <b>10</b> times.
 		req:10 trophyButton clicks
-		icon:icons[2,2] icons[0,2] icons[0,6]
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX4sdJhSCybIRkL-p-NB2uqFA0g0F2IceJ-g&usqp=CAU
 	*clickAchiev2
-		name:Don't squeeze me I'll fart
+		name:Light work
 		desc:Click the trophy <b>100</b> times.
 		req:100 trophyButton clicks
-		icon:icons[2,2] icons[0,3] icons[0,6]
+		icon:https://i.ibb.co/dPcRMGC/download-32.jpg
 	*clickAchiev3
-		name:You're cruising for a bruising, dude
+		name:Owchy my arm
 		desc:Click the trophy <b>2000</b> times.
 		req:2000 trophyButton clicks
-		icon:icons[2,2] icons[0,4] icons[0,6]
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKsEvcV-My_ckCeOjo_aG9PARMoN19qeffw&usqp=CAU
 		
 	*trophyPsAchiev1
-		name:Be vewy vewy quiet
+		name:you got brawlerrrs
 		desc:Produce <b>10</b> trophies per second.
 		req:10 trophies per second
-		icon:icons[2,3] icons[0,2] icons[0,6]
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX4sdJhSCybIRkL-p-NB2uqFA0g0F2IceJ-g&usqp=CAU
 	*trophyPsAchiev2
-		name:Hop and a skip
+		name:Child labor
 		desc:Produce <b>1000</b> trophies per second.
 		req:1000 trophies per second
-		icon:icons[2,3] icons[0,3] icons[0,6]
+		icon:https://i.ibb.co/dPcRMGC/download-32.jpg
 	*trophyPsAchiev3
-		name:Go forth and multiply
+		name:Temu factory owner
 		desc:Produce <b>100000</b> trophies per second.
 		req:100000 trophies per second
-		icon:icons[2,3] icons[0,4] icons[0,6]
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKsEvcV-My_ckCeOjo_aG9PARMoN19qeffw&usqp=CAU
 		
-	*carrotAchiev1
-		name:Isn't it neat
-		desc:Have <b>1</b> golden carrot.
-		req:1 goldenCarrot
-		icon:icons[0,1] icons[0,2]
-	*carrotAchiev2
+	*totalTrophyAchiev1
+		name:Bands
+		desc:Have <b>1</b> golden trophy.
+		req:1 goldenTrophy
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX4sdJhSCybIRkL-p-NB2uqFA0g0F2IceJ-g&usqp=CAU
+	*totalTrophyAchiev2
 		name:All that glitters
-		desc:Have <b>100</b> golden carrots.
-		req:100 goldenCarrot
-		icon:icons[0,1] icons[0,3]
-	*carrotAchiev3
-		name:Zero nutritional value
-		desc:Have <b>1000</b> golden carrots.
-		req:1000 goldenCarrot
-		icon:icons[0,1] icons[0,4]
+		desc:Have <b>100</b> golden trophy.
+		req:100 goldenTrophy
+		icon:https://i.ibb.co/dPcRMGC/download-32.jpg
+	*totalTrophyAchiev3
+		name:Cash money ap
+		desc:Have <b>1000</b> golden trophies.
+		req:1000 goldenTrophy
+		icon:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKsEvcV-My_ckCeOjo_aG9PARMoN19qeffw&usqp=CAU
 	
 	*fortressAchiev
-		name:Freedom!
-		desc:Complete building the <b>freedom fortress</b>.<//>This is it. You beat the game!
-		req:100 fortress
-		icon:icons[3,8] icons[0,4]
-		
+		name:Thats a dub
+		desc:Complete summoning <b>Cordelius</b>.<//>This is it. You beat the game!
+		req:100 cordelius
+		https://i.ibb.co/DVmf17v/download-33.jpg
