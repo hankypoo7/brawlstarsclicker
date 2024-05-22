@@ -72,9 +72,9 @@ Buildings
 		on click:anim glow
 		
 	*shelly|shellys
-		name:Shelly|Shelly
+		name:Shelly|Shellys
 		desc:Hire Shelly to get trophies.<//><b>Effect:</b><.>Produces 1 trophy every 10 seconds.
-		icon:https://liquipedia.net/commons/images/f/f6/Brawl_Shelly.png
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/shelly.png
 		cost:15 trophies
 		on tick:yield 0.1 trophy
 		unlocked
@@ -82,7 +82,7 @@ Buildings
 	*brock|brocks
 		name:Brock|Brocks
 		desc:Hire Brock to get trophies.<//><b>Effect:</b><.>Produces 1 trophy every 2 seconds.
-		icon:https://liquipedia.net/commons/images/0/0e/Brawl_Brock.png
+		icon:https://raw.githubusercontent.com/hankypoo7/clickergame/main/brock.png
 		cost:100 trophies
 		on tick:yield 0.5 trophies
 		req:100 trophies:earned
